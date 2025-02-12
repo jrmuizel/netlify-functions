@@ -10,7 +10,7 @@ export default async (req: Request, context: Context) => {
       
       // Enqueue chunks of data
       controller.enqueue(encoder.encode('Hello '));
-      controller.enqueue(encoder.encode('World!'));
+      controller.enqueue(encoder.encode('Worlder!'));
   
       // Close the stream when done
       controller.close();
