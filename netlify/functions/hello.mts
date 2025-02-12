@@ -271,7 +271,7 @@ export default async (req: Request, context: Context) => {
 
       for (let i = 0; i < data.length; i++) {
         controller.enqueue(encoder.encode(data[i]));
-        await sleep(100);
+        await sleep(10);
       }
   
       // Close the stream when done
